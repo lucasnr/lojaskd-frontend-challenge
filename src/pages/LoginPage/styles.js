@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { primaryColor } from '../../assets/colors';
+
 export const Container = styled.main`
 	align-items: center;
 	background-color: #ebebeb;
@@ -10,10 +12,10 @@ export const Container = styled.main`
 	width: 100%;
 
 	&::after {
-		background-color: #0087d2;
+		background-color: ${primaryColor};
 		bottom: 0px;
 		content: '';
-		height: 50%;
+		height: 60%;
 		position: absolute;
 		width: 100%;
 		z-index: 5;
@@ -40,21 +42,8 @@ export const Form = styled.form`
 	width: 100%;
 	z-index: 10;
 
-	input {
-		width: 100%;
-		border: none;
-		border-bottom: 2px solid #ddd;
-		font-size: 1em;
-		margin-bottom: 1em;
-		padding-bottom: 0.5em;
-
-		~ input {
-			margin-top: 1.25em;
-		}
-	}
-
 	button {
-		background-color: #0087d2;
+		background-color: ${primaryColor};
 		border: none;
 		border-radius: 4px;
 		box-shadow: 0px 0px 4px rgba(0, 0, 0, 25%);
@@ -67,12 +56,12 @@ export const Form = styled.form`
 `;
 
 export const FormTitle = styled.h1`
-	border-left: 4px solid #0087d2;
-	color: #0087d2;
+	border-left: 4px solid ${primaryColor};
+	color: ${primaryColor};
 	font-weight: normal;
-	margin-bottom: 1em;
+	margin-bottom: 10px;
 	margin-top: 0px;
-	padding-left: 0.5em;
+	padding: 0.25em 0.5em;
 `;
 
 export const FormContent = styled.div`
@@ -80,7 +69,7 @@ export const FormContent = styled.div`
 `;
 
 export const Link = styled.a`
-	color: #0087d2;
+	color: ${primaryColor};
 	display: block;
 	margin-top: 0.5em;
 	text-align: center;

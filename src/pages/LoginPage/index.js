@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Input from './Input';
 import {
 	Container,
 	Header,
@@ -20,8 +21,8 @@ export default function LoginPage() {
 				<Form>
 					<FormTitle>Acompanhar pedido</FormTitle>
 					<FormContent>
-						<input type="text" placeholder="Número do pedido" />
-						<input type="text" placeholder="CPF ou CNPJ" />
+						<Input id="number" placeholder="Número do pedido" />
+						<Input id="cpf" placeholder="CPF ou CNPJ" />
 						<button type="submit">Acompanhar</button>
 					</FormContent>
 					<Link href="https://lojaskd.com.br" target="_blank">
