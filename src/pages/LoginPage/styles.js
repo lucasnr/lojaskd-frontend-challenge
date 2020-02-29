@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
-import { primaryColor } from '../../assets/colors';
+import {
+	primaryColor,
+	secondaryColor,
+	backgroundColor
+} from '../../assets/colors';
 
 export const Container = styled.main`
 	align-items: center;
-	background-color: #ebebeb;
+	background-color: ${backgroundColor};
 	display: flex;
 	flex: 1;
 	flex-direction: column;
@@ -24,7 +28,7 @@ export const Container = styled.main`
 `;
 
 export const Header = styled.header`
-	background-color: #ffd741;
+	background-color: ${secondaryColor};
 	padding: 1em;
 	width: 100%;
 `;
