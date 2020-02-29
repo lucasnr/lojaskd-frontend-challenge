@@ -110,6 +110,7 @@ export const Message = styled.aside`
 	}
 
 	@media (min-width: 992px) {
+		border-bottom-right-radius: 4px;
 		grid-column: 2;
 		grid-row: 2;
 		margin-bottom: 0px;
@@ -128,16 +129,26 @@ export const MessageIcon = styled(MdChatBubbleOutline)`
 	color: #fff;
 	font-size: 120px;
 	margin: auto 1.5rem;
+	max-height: 96px;
 `;
 
 export const MessageText = styled.span`
+	align-items: center;
 	background-color: ${lighten(0.05, primaryColor)};
+	border-top-right-radius: 4px;
 	color: #fff;
-	display: block;
+	display: flex;
 	line-height: 1.5;
+	min-height: 96px;
 	padding: 1.5em;
 	text-align: center;
 	word-break: break-word;
+	width: 100%;
+
+	@media (min-width: 992px) {
+		border-bottom-right-radius: 4px;
+		border-top-right-radius: 0px;
+	}
 `;
 
 const Section = styled.section`
