@@ -30,7 +30,7 @@ export default function Product({ name, code, amount, price, status }) {
 				Preço total: <span>{price}</span>
 			</Price>
 			<Invoice>
-				Nota fiscal: <a href="#">Download disponível</a>
+				Nota fiscal: <a href="/">Download disponível</a>
 			</Invoice>
 			<Status>
 				Status atual: <span>{status}</span>

@@ -46,13 +46,13 @@ export default function TrackPage() {
 						<HeaderLink to="/">
 							Login/Cadastro <HeaderLinkIcon />
 						</HeaderLink>
-						<HeaderLink>
+						<HeaderLink to="/">
 							Atendimentos <HeaderLinkIcon />
 						</HeaderLink>
-						<HeaderLink>
+						<HeaderLink to="/">
 							Promoções <HeaderLinkIcon />
 						</HeaderLink>
-						<HeaderLink>Sair</HeaderLink>
+						<HeaderLink to="/">Sair</HeaderLink>
 					</DesktopOnly>
 				</Header>
 
