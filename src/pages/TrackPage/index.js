@@ -1,8 +1,8 @@
 import React from 'react';
-import { MdArrowDropDown, MdMoreVert } from 'react-icons/md';
+import { MdMoreVert } from 'react-icons/md';
 
 import { DesktopOnly, MobileOnly } from '../../components';
-import StatusField from './StatusField';
+import StatusField, { StatusDropDown } from './StatusField';
 import TrackingStage from './TrackingStage';
 import Product from './Product';
 import {
@@ -26,7 +26,6 @@ import {
 	Logo,
 	Link
 } from './styles';
-import { primaryColor } from '../../assets/colors';
 import logo from '../../assets/img/logo.png';
 
 export default function TrackPage() {
@@ -69,10 +68,15 @@ export default function TrackPage() {
 						<StatusField
 							name="Produtos"
 							value={
-								<>
-									<span>12</span>
-									<MdArrowDropDown size={20} color={primaryColor} />
-								</>
+								<StatusDropDown
+									value="12"
+									data={[
+										'1 item enviado p/ fábrica',
+										'5 itens em produção',
+										'3 items com a transportadora',
+										'3 itens entregues'
+									]}
+								/>
 							}
 						/>
 						<StatusField name="Data do pedido" value="09/01/2017" />
